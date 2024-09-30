@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IntelAI</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <button class="nav-toggle" onclick="toggleSidebar()">☰ Menu</button>
+
+    <aside class="sidebar">
+        <h2> </h2> <br>
+        <ul>
+            <li class="active"><a href="#home">Home</a></li>
+            <li class="active"><a href="#model">Model</a></li>
+            <li class="active"><a href="#architecture">Architecture</a></li>
+            <li class="active"><a href="#performance">Performance</a></li>
+            <li class="active"><a href="#team">Team</a></li>
+            <li class="active"><a href="#documentation">Documentation</a></li>
+            <li class="active"><a href="#documentation">Feedback</a></li>
+
+        </ul>
+    </aside>
+    
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <h1 class="main-title">ML-Enhanced Suricata IDS/IPS for Network Security</h1>
+            <p>Next-Generation Firewall Security with AI-Powered Threat Detection.</p>
+            <img src="src/images/bg_img2.jpeg" alt="Model Diagram" class="hero-image">
+            <div class="cta-buttons">
+                <a href="#features" class="btn">Features</a>
+                <a href="#demo" class="btn">Live Demo</a>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features">
+            <h2>Key Features</h2>
+            <ul>
+                <li><strong>ML-Based Anomaly Detection:</strong> Real-time improved threat detection.</li>
+                <li><strong>Adaptive Threat Response:</strong> Dynamic rule adjustment based on ML predictions.</li>
+                <li><strong>Predictive Network Analytics:</strong> Preemptively block suspicious activity.</li>
+                <li><strong>Automated Responses:</strong> Autonomous log analysis and alert flagging.</li>
+                <li><strong>Visualizations:</strong> Graphs showing improved detection rates.</li>
+            </ul>
+        </section> <br> <br> <br> <br>
+
+        <!-- Demo Section -->
+        <section id="demo">
+            <h2>Live Demo</h2>
+            <p>See our ML-enhanced Suricata detecting suspicious activities in real-time.</p>
+            <video src="demo.mp4" controls class="demo-video"></video>
+        </section>
+
+        <!-- Performance Section -->
+        <section id="performance">
+            <h2>Performance Comparison</h2>
+            <img src="performance_graph.png" alt="Performance Metrics" class="performance-image">
+            <p>Here we compare key metrics like accuracy, precision, and recall, showing how the ML model enhances the IDS/IPS.</p>
+        </section>
+
+        <!-- Team Section -->
+        <section id="team">
+            <h2>Meet the Team</h2>
+            <div class="team-members">
+                <div class="team-member">
+                    <img src="person1.jpg" alt="Team Member 1" class="team-image">
+                    <h3>Shubham Pandey</h3>
+                    <p>Web Developer & Git</p>
+                </div>
+                <div class="team-member">
+                    <img src="person2.jpg" alt="Team Member 2" class="team-image">
+                    <h3>Priyadarshan</h3>
+                    <p>ML Model Developer</p>
+                </div>
+                <div class="team-member">
+                    <img src="person1.jpg" alt="Team Member 1" class="team-image">
+                    <h3>Md. Ibrahim</h3>
+                    <p>ML Model Developer</p>
+                </div>
+                <div class="team-member">
+                    <img src="person2.jpg" alt="Team Member 2" class="team-image">
+                    <h3>Sarvesh</h3>
+                    <p>Suricata Integration Specialist</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Documentation Section -->
+        <section id="documentation">
+            <h2>Documentation & Resources</h2>
+            <p>Check out the <a href="https://github.com/yourrepo" target="_blank">GitHub Repository</a> for the full project documentation and code samples.</p>
+            <form action="submit_feedback.php" method="post" class="feedback-form">
+                <label for="feedback">Feedback:</label>
+                <textarea id="feedback" name="feedback" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="submit_contact.php" method="post" class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>

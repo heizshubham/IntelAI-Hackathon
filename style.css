@@ -1,0 +1,297 @@
+
+
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #adbbda;
+    color: #333;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Sidebar Styles */
+aside.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 200px;
+    background-color: #34495e;
+    padding: 20px;
+    color: white;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out; /* Add transition for smooth effect */
+}
+
+/* Hide sidebar on small screens */
+@media (max-width: 768px) {
+    aside.sidebar {
+        transform: translateX(-100%); /* Hide sidebar off-screen */
+    }
+
+    aside.sidebar.active {
+        transform: translateX(0); /* Show sidebar when active */
+    }
+}
+
+/* Button for toggling sidebar */
+.nav-toggle {
+    display: none;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    background-color: #050a44;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: block; /* Show button on small screens */
+    }
+
+    main {
+        margin-left: 0; /* Reset margin on small screens */
+    }
+}
+
+/* Ensure the main content adjusts with the sidebar */
+main {
+    margin-left: 250px;
+    padding: 20px;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+
+
+
+
+
+
+.sidebar h2 {
+    text-align: center;
+}
+
+/* Remove default list styles */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Each tab item */
+.sidebar ul li {
+    margin: 15px 0;
+    border: 1px solid #2c3e50; /* Border around each button */
+    border-radius: 5px; /* Rounded button style */
+}
+
+/* Links inside tabs */
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 15px; /* Increase padding for a button feel */
+    display: block;
+    transition: background 0.3s, transform 0.3s, border-left 0.3s;
+    text-align: center; /* Center the text */
+    background-color: #34495e; /* Button background color */
+    border-radius: 5px; /* Rounded corners */
+    position: relative;
+}
+
+/* Hover effect */
+.sidebar ul li a:hover {
+    background-color: #3498db; /* Bright blue on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for a button effect */
+    border-left: 5px solid #f1c40f; /* Yellow left border on hover */
+}
+
+/* Active/Highlighted tab */
+.sidebar ul li.active a, .sidebar ul li a:focus {
+    background-color: #2980b9; /* Different shade of blue for active/selected tab */
+    border-left: 5px solid #f1c40f; /* Add yellow left border when active */
+    transform: scale(1.05); /* Slight zoom effect for active tab */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Stronger shadow for active tab */
+}
+
+/* Add space between each tab */
+.sidebar ul li + li {
+    margin-top: 10px; /* Add distance between each tab */
+    border-top: none; /* Remove top border for cleaner design */
+}
+
+
+main {
+    margin-left: 250px; /* Leave space for sidebar */
+    padding: 20px;
+    flex-grow: 1;
+    overflow-y: auto; /* Enable scrolling for main content */
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: url('path_to_background.jpg') no-repeat center center/cover;
+    color: black; /* Change text color to black */
+    position: relative;
+}
+
+.hero h1, .hero p {
+    color: black; /* Set heading and paragraph color to black */
+}
+
+
+.main-title {
+    font-size: 3rem; /* Adjust size as needed */
+    font-weight: bold; /* Make it bold */
+    margin: 20px 0; /* Add margin for spacing */
+}
+
+p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+
+.hero-image {
+    width: 100%;
+    max-width: 1000px;
+    height: 400px;
+    border-radius: 20px;
+    margin: 20px 0;
+}
+
+.cta-buttons {
+    margin-top: 20px;
+}
+
+.cta-buttons .btn {
+    text-decoration: none;
+    padding: 15px 30px;
+    background-color: #3498db; /* Bright blue */
+    color: white;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 15px;
+    transition: background 0.3s;
+}
+
+.cta-buttons .btn:hover {
+    background-color: #2980b9; /* Darker blue */
+}
+
+/* Features Section */
+#features {
+    padding: 50px 20px;
+    background-color: #34495e; /* Dark gray */
+    text-align: center;
+    color: white; /* Set text color to white */
+    border-radius: 50px;
+}
+
+
+
+
+#features h2 {
+    margin-bottom: 20px;
+}
+
+#features ul {
+    list-style: none;
+    padding: 0;
+}
+
+#features ul li {
+    margin: 15px 0;
+}
+
+/* Demo Section */
+.demo-video {
+    width: 100%;
+    max-width: 800px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+}
+
+#demo {
+    font-size: 1.5rem; /* Adjust size as needed */
+    font-weight: bold; /* Make it bold */
+    margin: 20px 0; /* Add margin for spacing */
+    text-align: center;
+}
+
+/* Performance Section */
+.performance-image {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+}
+
+/* Team Section */
+.team-members {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    margin: 20px;
+    text-align: center;
+}
+
+.team-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Documentation Section */
+.feedback-form, .contact-form {
+    max-width: 600px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-form label, .contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.feedback-form textarea, .contact-form textarea,
+.feedback-form input, .contact-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.feedback-form button, .contact-form button {
+    background-color: #3498db; /* Bright blue */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.feedback-form button:hover, .contact-form button:hover {
+    background-color: #2980b9; /* Darker blue */
+}
+
+
+
+
