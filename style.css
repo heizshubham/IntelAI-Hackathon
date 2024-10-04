@@ -1,13 +1,10 @@
 
-/* Global Styles */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #adbbda;
     color: #333;
-    display: flex;
-    flex-direction: row;
 }
 
 /* Sidebar Styles */
@@ -21,7 +18,7 @@ aside.sidebar {
     padding: 20px;
     color: white;
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease-in-out; /* Add transition for smooth effect */
+    transition: transform 0.3s ease-in-out;
 }
 
 /* Hide sidebar on small screens */
@@ -41,7 +38,7 @@ aside.sidebar {
     position: fixed;
     top: 15px;
     left: 15px;
-    background-color: #050a44;
+    background-color: #34495e;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -163,8 +160,8 @@ p {
 
 .hero-image {
     width: 100%;
-    max-width: 1000px;
-    height: 400px;
+    max-width: 800px;
+    height: auto;
     border-radius: 20px;
     margin: 20px 0;
 }
@@ -197,21 +194,51 @@ p {
     border-radius: 50px;
 }
 
-
-
+.feature-container {
+    margin: 0 auto 30px; /* Center the container and add spacing between containers */
+    padding: 20px;
+    max-width: 600px; /* Decrease the width of the container */
+    border: 1px solid #ecf0f1; /* Add a light border around each container */
+    border-radius: 20px;
+}
 
 #features h2 {
-    margin-bottom: 20px;
+    font-size: 2rem;
+    margin-bottom: 30px; /* Add some space below the heading */
 }
 
-#features ul {
-    list-style: none;
+.feature-container ul {
+    list-style-type: none;
     padding: 0;
+    margin: 0;
+    text-align: center; /* Center-align the text */
 }
 
-#features ul li {
-    margin: 15px 0;
+.feature-container ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    text-align: center; /* Center-align the text inside each list item */
 }
+
+
+
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+    .feature-container ul li {
+        text-align: center; /* Center-align text for mobile */
+    }
+}
+
+
+/* Ensure the items stack on small screens */
+@media (max-width: 768px) {
+    .feature-container ul li {
+        flex: 1 1 100%; /* Full width for small screens */
+        text-align: center; /* Center text on small screens */
+    }
+}
+
 
 /* Demo Section */
 .demo-video {
@@ -228,12 +255,26 @@ p {
     text-align: center;
 }
 
+#demo h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
 /* Performance Section */
 .performance-image {
     width: 100%;
-    max-width: 800px;
-    border-radius: 10px;
+    border-radius: 20px;
 }
+
+
+#performance h2 {
+    font-size: 3rem; /* Adjust size as needed */
+    font-weight: bold; /* Make it bold */
+    margin: 20px 0; /* Add margin for spacing */
+}
+
+
 
 /* Team Section */
 .team-members {
@@ -248,10 +289,16 @@ p {
 }
 
 .team-image {
-    width: 150px;
-    height: 150px;
+    width: 200px; /* Increase the width */
+    height: 200px; /* Increase the height */
     border-radius: 50%;
-    object-fit: cover;
+}
+
+
+#team h2 {
+    font-size: 3rem; /* Adjust size as needed */
+    font-weight: bold; /* Make it bold */
+    margin: 20px 0; /* Add margin for spacing */
 }
 
 /* Documentation Section */
@@ -263,18 +310,97 @@ h2 {
     margin-bottom: 10px;
     text-align: center;
 }
-.contact-form {
-    max-width: 600px;
-    margin: 20px auto;
-    background: #ecf0f1; /* Light gray background */
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow */
-    transition: transform 0.3s ease-in-out;
+
+#documentation h2 {
+    font-size: 3rem; /* Adjust size as needed */
+    font-weight: bold; /* Make it bold */
+    margin: 20px 0; /* Add margin for spacing */
 }
 
+#documentation {
+    text-align: center; /* Center the content */
+    padding: 50px 20px;
+    border-radius: 20px;
+    background-color: #1abc9c; 
+    transition: background-color 0.4s ease; 
+    margin: 30px auto;
+    width: 60%; /* Limit width for better centering */
+}
+
+#documentation:hover {
+    background-color: #34495e;  
+}
+
+#documentation h2 {
+    font-size: 2.5rem; /* Adjust the font size */
+    color: white; /* Set h2 color to white */
+    margin-bottom: 20px;
+}
+
+#documentation p {
+    font-size: 1.2rem; /* Adjust paragraph font size */
+    color: white; /* Set text color to white */
+}
+
+#documentation a {
+    color: #f39c12; /* Link color */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#documentation a:hover {
+    color: #d35400; /* Sexy hover effect on link */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    #documentation {
+        width: 90%; /* Increase width to fit within small screens */
+    }
+
+    #documentation h2 {
+        font-size: 2rem; /* Decrease title size for smaller screens */
+    }
+
+    #documentation p {
+        font-size: 1rem; /* Adjust paragraph font size */
+    }
+}
+
+@media (max-width: 480px) {
+    #documentation h2 {
+        font-size: 1.8rem; /* Further reduce the title size for very small screens */
+    }
+
+    #documentation p {
+        font-size: 0.9rem; /* Adjust paragraph font size */
+    }
+}
+
+#contact h2 {
+    font-size: 3rem; /* Adjust size as needed */
+    font-weight: bold; /* Make it bold */
+    margin: 20px 0; /* Add margin for spacing */
+}
+
+
+/* Main Form Styles */
+.contact-form {
+    max-width: 500px; /* Reduce the form width */
+    margin: 20px auto;
+    background: #1abc9c; /* Sexy teal background */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Slightly deeper shadow for effect */
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+/* Form Hover Effect */
 .contact-form:hover {
     transform: translateY(-5px); /* Lift form on hover */
+    background-color: #34495e; /* Darker background on hover */
 }
 
 /* Label Styles */
@@ -286,19 +412,26 @@ h2 {
     text-transform: uppercase;
     font-size: 14px;
     letter-spacing: 1px;
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* Label Color Change on Hover */
+.contact-form:hover label {
+    color: #ffffff; /* Change label text to white when form is hovered */
 }
 
 /* Input and Textarea Styles */
 .contact-form input, .contact-form textarea {
     width: 100%;
-    padding: 12px 15px;
-    margin-bottom: 20px;
+    padding: 10px 15px;
+    margin-bottom: 15px;
     border-radius: 10px;
     border: 2px solid #bdc3c7;
     background-color: #ffffff; /* White for inputs */
-    font-size: 16px;
+    font-size: 15px;
     color: #2c3e50; /* Dark text color */
     transition: border-color 0.3s ease;
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
 }
 
 /* Input and Textarea Focus Effect */
@@ -310,20 +443,126 @@ h2 {
 /* Button Styles */
 .contact-form button {
     background-color: #3498db; /* Bright blue */
-    color: white; /* White text */
+    color: white;
     border: none;
-    padding: 12px 25px;
+    padding: 10px 20px;
     border-radius: 25px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 15px;
     letter-spacing: 1px;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
+/* Button Hover Effect */
 .contact-form button:hover {
     background-color: #2980b9; /* Darker blue */
     transform: scale(1.05); /* Slight zoom on hover */
 }
+
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+    .contact-form {
+        max-width: 90%; /* Adjust to fit better on smaller screens */
+        padding: 15px;
+    }
+
+    .contact-form input, .contact-form textarea {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    .contact-form button {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-form {
+        max-width: 95%; /* Further adjust width for extra small screens */
+    }
+
+    .contact-form input, .contact-form textarea {
+        font-size: 13px; /* Adjust input font size */
+    }
+
+    .contact-form button {
+        font-size: 13px;
+        padding: 8px 12px;
+    }
+}
+
+
+/* Input and Textarea Styles */
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    border: 4px solid #bdc3c7;
+    background-color: #ffffff; /* White for inputs */
+    font-size: 15px;
+    color: #2c3e50; /* Dark text color */
+    transition: border-color 0.3s ease;
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+/* Input and Textarea Focus Effect */
+.contact-form input:focus, .contact-form textarea:focus {
+    border-color: #3498db; /* Bright blue border on focus */
+    outline: none;
+}
+
+/* Button Styles */
+.contact-form button {
+    background-color: #3498db; /* Bright blue */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 15px;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Button Hover Effect */
+.contact-form button:hover {
+    background-color: #2980b9; /* Darker blue */
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+    .contact-form {
+        max-width: 90%; /* Adjust to fit better on smaller screens */
+        padding: 15px;
+    }
+
+    .contact-form input, .contact-form textarea {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    .contact-form button {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-form {
+        max-width: 95%; /* Further adjust width for extra small screens */
+    }
+
+    .contact-form input, .contact-form textarea {
+        font-size: 13px; /* Adjust input font size */
+    }
+
+    .contact-form button {
+        font-size: 13px;
+        padding: 8px 12px;
+    }
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -403,47 +642,6 @@ a:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Global Styles */
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #adbbda;
-    color: #333;
-}
-
-/* Sidebar Styles */
-aside.sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 200px;
-    background-color: #34495e;
-    padding: 20px;
-    color: white;
-    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease-in-out;
-}
-
 /* Responsive Sidebar for small screens */
 @media (max-width: 768px) {
     aside.sidebar {
@@ -455,20 +653,7 @@ aside.sidebar {
     }
 }
 
-/* Button for toggling sidebar */
-.nav-toggle {
-    display: none;
-    position: fixed;
-    top: 15px;
-    left: 15px;
-    background-color: #050a44;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 20px;
-    cursor: pointer;
-    z-index: 1000;
-}
+
 
 @media (max-width: 768px) {
     .nav-toggle {
@@ -512,18 +697,7 @@ p {
     margin-bottom: 15px;
 }
 
-.hero-image {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    border-radius: 15px;
-    margin: 10px 0;
-}
 
-/* Button adjustments */
-.cta-buttons {
-    margin-top: 15px;
-}
 
 .cta-buttons .btn {
     padding: 12px 20px;
@@ -537,108 +711,3 @@ p {
         margin: 8px;
     }
 }
-
-/* Features Section */
-#features {
-    padding: 40px 15px;
-    background-color: #34495e;
-    text-align: center;
-    color: white;
-    border-radius: 30px;
-}
-
-#features h2 {
-    font-size: 2rem;
-}
-
-@media (max-width: 768px) {
-    #features {
-        padding: 30px 10px;
-    }
-    #features h2 {
-        font-size: 1.8rem;
-    }
-}
-
-/* Demo Section */
-#demo {
-    font-size: 1.5rem;
-    text-align: center;
-}
-
-.demo-video {
-    width: 100%;
-    max-width: 100%;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-/* Performance Section */
-.performance-image {
-    width: 100%;
-    max-width: 100%;
-    border-radius: 10px;
-}
-
-/* Team Section */
-.team-members {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.team-member {
-    margin: 10px;
-    text-align: center;
-}
-
-.team-image {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-}
-
-@media (max-width: 768px) {
-    .team-members {
-        display: block;
-        text-align: center;
-    }
-    .team-member {
-        margin-bottom: 20px;
-    }
-}
-
-/* Contact Form */
-.contact-form {
-    max-width: 100%;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 10px auto;
-}
-
-@media (max-width: 768px) {
-    .contact-form {
-        padding: 15px;
-        margin: 5px auto;
-    }
-}
-
-/* General Heading Styling */
-h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-@media (max-width: 768px) {
-    h2 {
-        font-size: 1.6rem;
-    }
-}
-
-/* Footer / Documentation Section */
-footer {
-    padding: 10px;
-    text-align: center;
-}
-

@@ -11,7 +11,7 @@
 
 <body>
 
-    <button class="nav-toggle" onclick="toggleSidebar()">☰ Menu</button>
+    <button class="nav-toggle" onclick="toggleSidebar()">☰</button>
 
     <aside class="sidebar">
         <h2> </h2> <br>
@@ -43,14 +43,32 @@
         <!-- Features Section -->
         <section id="features">
             <h2>Key Features</h2>
-            <ul>
-                <li><strong>ML-Based Anomaly Detection:</strong> Real-time improved threat detection.</li>
-                <li><strong>Adaptive Threat Response:</strong> Dynamic rule adjustment based on ML predictions.</li>
-                <li><strong>Predictive Network Analytics:</strong> Preemptively block suspicious activity.</li>
-                <li><strong>Automated Responses:</strong> Autonomous log analysis and alert flagging.</li>
-                <li><strong>Visualizations:</strong> Graphs showing improved detection rates.</li>
-            </ul>
-        </section> <br> <br> <br> <br>
+        
+            <!-- First container -->
+            <div class="feature-container">
+                <ul>
+                    <li><strong>ML-Based Anomaly Detection:</strong> Real-time improved threat detection.</li>
+                    <li><strong>Adaptive Threat Response:</strong> Dynamic rule adjustment based on ML predictions.</li>
+                    <li><strong>Predictive Network Analytics:</strong> Preemptively block suspicious activity.</li>
+                    <li><strong>Automated Responses:</strong> Autonomous log analysis and alert flagging.</li>
+                    <li><strong>Visualizations:</strong> Graphs showing improved detection rates.</li>
+                </ul>
+            </div>
+        
+            <!-- Second container -->
+            <div class="feature-container">
+                <ul>
+                    <li><strong>ML-Based Anomaly Detection:</strong> Real-time improved threat detection.</li>
+                    <li><strong>Adaptive Threat Response:</strong> Dynamic rule adjustment based on ML predictions.</li>
+                    <li><strong>Predictive Network Analytics:</strong> Preemptively block suspicious activity.</li>
+                    <li><strong>Automated Responses:</strong> Autonomous log analysis and alert flagging.</li>
+                    <li><strong>Visualizations:</strong> Graphs showing improved detection rates.</li>
+                </ul>
+            </div>
+        
+        </section>
+        
+         <br> <br> <br> <br>
 
         <!-- Demo Section -->
         <section id="demo">
@@ -59,51 +77,61 @@
             <video src="demo.mp4" controls class="demo-video"></video>
         </section>
 
+        <br> <br> <br> <br>
+
+
         <!-- Performance Section -->
         <section id="performance">
-            <h2>Performance Comparison</h2>
-            <img src="performance_graph.png" alt="Performance Metrics" class="performance-image">
-            <p>Here we compare key metrics like accuracy, precision, and recall, showing how the ML model enhances the
-                IDS/IPS.</p>
+            <h2>Performance Comparison</h2> <br><br>
+            <img src="src/images/performance_graph.png" alt="Performance Metrics" class="performance-image">
+            <!-- <p>Here we compare key metrics like accuracy, precision, and recall, showing how the ML model enhances the
+                IDS/IPS.</p> -->
         </section>
+
+        <br> <br> <br> <br>
+
 
         <!-- Team Section -->
         <section id="team">
-            <h2>Meet the Team</h2>
+            <h2>Meet the Team</h2>         <br> <br> 
+
             <div class="team-members">
                 <div class="team-member">
-                    <img src="person1.jpg" alt="Team Member 1" class="team-image">
-                    <h3>Shubham Pandey</h3>
-                    <p>Web Developer & Git</p>
+                    <img src="src/team_image/ibrahim.jpeg" alt="Team Member 1" class="team-image">
+                    <h3>Md. Ibrahim</h3>
+                    <p>Team Leader</p>
                 </div>
                 <div class="team-member">
-                    <img src="person2.jpg" alt="Team Member 2" class="team-image">
+                    <img src="src/team_image/lpd.jpeg" alt="Team Member 2" class="team-image">
                     <h3>Priyadarshan</h3>
                     <p>ML Model Developer</p>
                 </div>
                 <div class="team-member">
-                    <img src="person1.jpg" alt="Team Member 1" class="team-image">
-                    <h3>Md. Ibrahim</h3>
-                    <p>ML Model Developer</p>
+                    <img src="src/team_image/sarvesh.jpeg" alt="Team Member 1" class="team-image">
+                    <h3>Sarvesh</h3>
+                    <p>Model Trainer</p>
                 </div>
                 <div class="team-member">
-                    <img src="person2.jpg" alt="Team Member 2" class="team-image">
-                    <h3>Sarvesh</h3>
-                    <p>Suricata Integration Specialist</p>
+                    <img src="src/team_image/shubham.jpeg" alt="Team Member 2" class="team-image">
+                    <h3>Shubham Pandey</h3>
+                    <p>Web Developer & Git</p>
                 </div>
             </div>
         </section>
+
+        <br> <br> <br> <br>
 
         <!-- Documentation Section -->
         <section id="documentation">
             <h2>Documentation & Resources</h2>
             <p>Check out the <a href="https://github.com/yourrepo" target="_blank">GitHub Repository</a> for the full
                 project documentation and code samples.</p>
-        </section> <br> <br> <br><br> <br> <br><br> <br> <br>
+        </section>
+         <br> <br> <br><br> <br> <br><br> <br> <br>
 
         <!-- Contact Section -->
         <section id="contact">
-            <h2>Contact Us / Feedback</h2>
+            <h2>Contact Us / Feedback</h2>  <br>
             <form action="submit_contact.php" method="post" class="contact-form">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
@@ -116,12 +144,13 @@
 
                 <button type="submit">Send</button>
             </form>
-        </section>
+        </section>    <br><br> <br> <br>  <br>
 
     </main>
 
 </body>
 
 </html>
+
 
 
