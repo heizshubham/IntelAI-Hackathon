@@ -24,11 +24,11 @@ aside.sidebar {
 /* Hide sidebar on small screens */
 @media (max-width: 768px) {
     aside.sidebar {
-        transform: translateX(-100%); /* Hide sidebar off-screen */
+        transform: translateX(-100%); 
     }
 
     aside.sidebar.active {
-        transform: translateX(0); /* Show sidebar when active */
+        transform: translateX(0);
     }
 }
 
@@ -49,11 +49,11 @@ aside.sidebar {
 
 @media (max-width: 768px) {
     .nav-toggle {
-        display: block; /* Show button on small screens */
+        display: block; 
     }
 
     main {
-        margin-left: 0; /* Reset margin on small screens */
+        margin-left: 0; 
     }
 }
 
@@ -84,51 +84,51 @@ main {
 /* Each tab item */
 .sidebar ul li {
     margin: 15px 0;
-    border: 1px solid #2c3e50; /* Border around each button */
-    border-radius: 5px; /* Rounded button style */
+    border: 1px solid #2c3e50; 
+    border-radius: 5px;
 }
 
 /* Links inside tabs */
 .sidebar ul li a {
     color: white;
     text-decoration: none;
-    padding: 12px 15px; /* Increase padding for a button feel */
+    padding: 12px 15px;
     display: block;
     transition: background 0.3s, transform 0.3s, border-left 0.3s;
-    text-align: center; /* Center the text */
-    background-color: #34495e; /* Button background color */
-    border-radius: 5px; /* Rounded corners */
+    text-align: center; 
+    background-color: #34495e;
+    border-radius: 5px;
     position: relative;
 }
 
 /* Hover effect */
 .sidebar ul li a:hover {
-    background-color: #3498db; /* Bright blue on hover */
-    transform: scale(1.05); /* Slight zoom effect on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for a button effect */
+    background-color: #3498db; 
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     border-left: 5px solid #1abc9c; 
 }
 
 /* Active/Highlighted tab */
 .sidebar ul li.active a, .sidebar ul li a:focus {
-    background-color: #2980b9; /* Different shade of blue for active/selected tab */
-    border-left: 5px solid #1abc9c; /* Add yellow left border when active */
-    transform: scale(1.05); /* Slight zoom effect for active tab */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Stronger shadow for active tab */
+    background-color: #2980b9;
+    border-left: 5px solid #1abc9c;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 /* Add space between each tab */
 .sidebar ul li + li {
-    margin-top: 10px; /* Add distance between each tab */
-    border-top: none; /* Remove top border for cleaner design */
+    margin-top: 10px; 
+    border-top: none;
 }
 
 
 main {
-    margin-left: 250px; /* Leave space for sidebar */
+    margin-left: 250px; 
     padding: 20px;
     flex-grow: 1;
-    overflow-y: auto; /* Enable scrolling for main content */
+    overflow-y: auto; 
 }
 
 /* Hero Section */
@@ -136,19 +136,19 @@ main {
     text-align: center;
     padding: 80px 20px;
     background: url('path_to_background.jpg') no-repeat center center/cover;
-    color: black; /* Change text color to black */
+    color: black; 
     position: relative;
 }
 
 .hero h1, .hero p {
-    color: black; /* Set heading and paragraph color to black */
+    color: black; 
 }
 
 
 .main-title {
-    font-size: 3rem; /* Adjust size as needed */
-    font-weight: bold; /* Make it bold */
-    margin: 20px 0; /* Add margin for spacing */
+    font-size: 3rem; 
+    font-weight: bold; 
+    margin: 20px 0; 
 }
 
 p {
@@ -173,7 +173,7 @@ p {
 .cta-buttons .btn {
     text-decoration: none;
     padding: 15px 30px;
-    background-color: #3498db; /* Bright blue */
+    background-color: #3498db;
     color: white;
     margin: 10px;
     display: inline-block;
@@ -182,59 +182,59 @@ p {
 }
 
 .cta-buttons .btn:hover {
-    background-color: #2980b9; /* Darker blue */
+    background-color: #2980b9; 
 }
 
 /* Features Section */
 #features {
     padding: 50px 20px;
-    background-color: #34495e; /* Dark gray */
+    background-color: #34495e; 
     text-align: center;
-    color: white; /* Set text color to white */
+    color: white; 
     border-radius: 50px;
 }
 
 .feature-container {
-    margin: 0 auto 30px; /* Center the container and add spacing between containers */
+    margin: 0 auto 30px; 
     padding: 20px;
-    max-width: 600px; /* Decrease the width of the container */
-    border: 1px solid #ecf0f1; /* Add a light border around each container */
+    max-width: 600px; 
+    border: 1px solid #ecf0f1; 
     border-radius: 20px;
 }
 
 #features h2 {
     font-size: 2rem;
-    margin-bottom: 30px; /* Add some space below the heading */
+    margin-bottom: 30px; 
 }
 
 .feature-container ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    text-align: center; /* Center-align the text */
+    text-align: center;
 }
 
 .feature-container ul li {
     margin-bottom: 10px;
     font-size: 16px;
-    text-align: center; /* Center-align the text inside each list item */
+    text-align: center; 
 }
 
 
 .feature-container ul {
-    list-style-type: disc; /* Use disc bullet points */
-    padding-left: 20px; /* Indent the list */
-    color: white; /* Change text color to white */
-    font-size: 1.1rem; /* Adjust font size as needed */
+    list-style-type: disc;
+    padding-left: 20px; 
+    color: white; 
+    font-size: 1.1rem; 
 }
 
 .feature-container li {
-    margin-bottom: 15px; /* Space between bullet points */
+    margin-bottom: 15px;
 }
 
 /* Optional: Style the strong text */
 .feature-container li strong {
-    color: #1abc9c;  /* Different color for strong text */
+    color: #1abc9c;
 }
 
 
@@ -242,7 +242,7 @@ p {
 /* Responsive layout for smaller screens */
 @media (max-width: 768px) {
     .feature-container ul li {
-        text-align: center; /* Center-align text for mobile */
+        text-align: center;
     }
 }
 
@@ -250,8 +250,8 @@ p {
 /* Ensure the items stack on small screens */
 @media (max-width: 768px) {
     .feature-container ul li {
-        flex: 1 1 100%; /* Full width for small screens */
-        text-align: center; /* Center text on small screens */
+        flex: 1 1 100%; 
+        text-align: center;
     }
 }
 
@@ -265,9 +265,9 @@ p {
 }
 
 #demo {
-    font-size: 1.5rem; /* Adjust size as needed */
-    font-weight: bold; /* Make it bold */
-    margin: 20px 0; /* Add margin for spacing */
+    font-size: 1.5rem;
+    font-weight: bold; 
+    margin: 20px 0;
     text-align: center;
 }
 
@@ -277,6 +277,107 @@ p {
     margin: 20px 0;
 }
 
+
+
+/* Styling for the input form */
+.network-data-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto; 
+    text-align: center; 
+}
+
+/* Styling the textarea for network input */
+#network-input {
+    width: 100%; 
+    height: 120px;
+    border: 3px solid #4A90E2; 
+    border-radius: 20px; 
+    padding: 15px; 
+    font-size: 16px; 
+    font-family: 'Arial', sans-serif;
+    outline: none;
+    background-color: #f5f5f5;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Add hover and focus effects */
+#network-input:hover, #network-input:focus {
+    border-color: #007BFF; 
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2); 
+}
+
+/* Styling for the file upload button */
+.file-upload {
+    margin-top: 10px;
+    padding: 10px;
+    border: 2px solid #4A90E2;
+    border-radius: 12px; 
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%; 
+    background-color: #f5f5f5;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Styling the submit button */
+.network-data-form button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 150px; /* Reduced width */
+    transition: background-color 0.3s ease;
+    align-self: center;
+}
+
+/* File upload and button hover effect */
+.file-upload:hover, .network-data-form button:hover {
+    border-color: #007BFF; 
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2); /* Soft shadow */
+}
+
+
+
+
+/* Styling the prediction result box */
+.prediction-box {
+    display: none; 
+    margin-top: 20px;
+    padding: 20px;
+    border: 3px solid #4A90E2; 
+    border-radius: 15px;
+    background-color: #f5f5f5; 
+    box-shadow: 0 6px 12px rgba(0, 123, 255, 0.3);
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* On hover effect for prediction result */
+.prediction-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 123, 255, 0.4);
+}
+
+/* Style the prediction text */
+.prediction-box p {
+    margin: 0;
+    padding: 0;
+    color: #007BFF; 
+    font-weight: bold;
+}
+
+
+
+
 /* Performance Section */
 .performance-image {
     width: 100%;
@@ -285,9 +386,9 @@ p {
 
 
 #performance h2 {
-    font-size: 3rem; /* Adjust size as needed */
-    font-weight: bold; /* Make it bold */
-    margin: 20px 0; /* Add margin for spacing */
+    font-size: 3rem;
+    font-weight: bold; 
+    margin: 20px 0;
 }
 
 
@@ -305,16 +406,16 @@ p {
 }
 
 .team-image {
-    width: 200px; /* Increase the width */
-    height: 200px; /* Increase the height */
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
 }
 
 
 #team h2 {
-    font-size: 3rem; /* Adjust size as needed */
-    font-weight: bold; /* Make it bold */
-    margin: 20px 0; /* Add margin for spacing */
+    font-size: 3rem;
+    font-weight: bold; 
+    margin: 20px 0;
 }
 
 /* Documentation Section */
@@ -328,19 +429,19 @@ h2 {
 }
 
 #documentation h2 {
-    font-size: 3rem; /* Adjust size as needed */
-    font-weight: bold; /* Make it bold */
-    margin: 20px 0; /* Add margin for spacing */
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 20px 0;
 }
 
 #documentation {
-    text-align: center; /* Center the content */
+    text-align: center;
     padding: 50px 20px;
     border-radius: 20px;
     background-color: #1abc9c; 
     transition: background-color 0.4s ease; 
     margin: 30px auto;
-    width: 60%; /* Limit width for better centering */
+    width: 60%;
 }
 
 #documentation:hover {
@@ -348,14 +449,14 @@ h2 {
 }
 
 #documentation h2 {
-    font-size: 2.5rem; /* Adjust the font size */
-    color: white; /* Set h2 color to white */
+    font-size: 2.5rem;
+    color: white;
     margin-bottom: 20px;
 }
 
 #documentation p {
-    font-size: 1.2rem; /* Adjust paragraph font size */
-    color: white; /* Set text color to white */
+    font-size: 1.2rem;
+    color: white;
 }
 
 #documentation a {
@@ -366,74 +467,74 @@ h2 {
 }
 
 #documentation a:hover {
-    color: #d35400; /* Sexy hover effect on link */
+    color: #d35400; 
 }
 
 /* Media query for responsiveness */
 @media (max-width: 768px) {
     #documentation {
-        width: 90%; /* Increase width to fit within small screens */
+        width: 90%; 
     }
 
     #documentation h2 {
-        font-size: 2rem; /* Decrease title size for smaller screens */
+        font-size: 2rem;
     }
 
     #documentation p {
-        font-size: 1rem; /* Adjust paragraph font size */
+        font-size: 1rem; 
     }
 }
 
 @media (max-width: 480px) {
     #documentation h2 {
-        font-size: 1.8rem; /* Further reduce the title size for very small screens */
+        font-size: 1.8rem;
     }
 
     #documentation p {
-        font-size: 0.9rem; /* Adjust paragraph font size */
+        font-size: 0.9rem; 
     }
 }
 
 #contact h2 {
-    font-size: 3rem; /* Adjust size as needed */
-    font-weight: bold; /* Make it bold */
-    margin: 20px 0; /* Add margin for spacing */
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 20px 0;
 }
 
 
 /* Main Form Styles */
 .contact-form {
-    max-width: 500px; /* Reduce the form width */
+    max-width: 500px; 
     margin: 20px auto;
-    background: #1abc9c; /* Sexy teal background */
+    background: #1abc9c;
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Slightly deeper shadow for effect */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
-    box-sizing: border-box; /* Ensure padding and border are included in the width */
+    box-sizing: border-box; 
 }
 
 /* Form Hover Effect */
 .contact-form:hover {
-    transform: translateY(-5px); /* Lift form on hover */
-    background-color: #34495e; /* Darker background on hover */
+    transform: translateY(-5px); 
+    background-color: #34495e;
 }
 
 /* Label Styles */
 .contact-form label {
     display: block;
     font-weight: bold;
-    color: #2c3e50; /* Dark gray for labels */
+    color: #2c3e50;
     margin-bottom: 5px;
     text-transform: uppercase;
     font-size: 14px;
     letter-spacing: 1px;
-    transition: color 0.3s ease; /* Smooth transition for color change */
+    transition: color 0.3s ease; 
 }
 
 /* Label Color Change on Hover */
 .contact-form:hover label {
-    color: #ffffff; /* Change label text to white when form is hovered */
+    color: #ffffff;
 }
 
 /* Input and Textarea Styles */
@@ -443,11 +544,11 @@ h2 {
     margin-bottom: 15px;
     border-radius: 10px;
     border: 2px solid #bdc3c7;
-    background-color: #ffffff; /* White for inputs */
+    background-color: #ffffff; 
     font-size: 15px;
     color: #2c3e50; /* Dark text color */
     transition: border-color 0.3s ease;
-    box-sizing: border-box; /* Ensure padding and border are included in the width */
+    box-sizing: border-box;
 }
 
 /* Input and Textarea Focus Effect */

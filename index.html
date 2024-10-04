@@ -43,22 +43,31 @@
         <!-- Features Section -->
         <section id="features">
             <h2>Introduction</h2>
-        
+
             <!-- First container -->
             <div class="feature-container">
                 <ul>
-                    <li><strong>Intrusion Detection Systems (IDS) and Intrusion Prevention Systems (IPS)</strong> are essential for identifying and preventing unauthorized access to network systems.</li>
-                    <li><strong>Suricata</strong> is a high-performance, open-source IDS/IPS engine that detects network anomalies using predefined rules.</li>
-                    <li><strong> </strong> Traditional rule-based systems like Suricata are prone to high false positives and may struggle with evolving cyber threats and zero-day attacks.
+                    <li><strong>Intrusion Detection Systems (IDS) and Intrusion Prevention Systems (IPS)</strong> are
+                        essential for identifying and preventing unauthorized access to network systems.</li>
+                    <li><strong>Suricata</strong> is a high-performance, open-source IDS/IPS engine that detects network
+                        anomalies using predefined rules.</li>
+                    <li><strong> </strong> Traditional rule-based systems like Suricata are prone to high false
+                        positives and may struggle with evolving cyber threats and zero-day attacks.
                     </li>
-                    <li><strong>Long Short-Term Memory (LSTM)</strong> networks, a type of Recurrent Neural Network (RNN), excel at recognizing patterns in sequential data, making them suitable for detecting complex, time-dependent network threats.</li>
-                    <li><strong> </strong> This project proposes integrating LSTM with Suricata to enhance the accuracy of intrusion detection, reduce false positives, and detect sophisticated or evolving attacks in real-time.
+                    <li><strong>Long Short-Term Memory (LSTM)</strong> networks, a type of Recurrent Neural Network
+                        (RNN), excel at recognizing patterns in sequential data, making them suitable for detecting
+                        complex, time-dependent network threats.</li>
+                    <li><strong> </strong> This project proposes integrating LSTM with Suricata to enhance the accuracy
+                        of intrusion detection, reduce false positives, and detect sophisticated or evolving attacks in
+                        real-time.
                     </li>
-                    <li><strong> </strong> The goal is to leverage LSTM’s learning capabilities to complement Suricata’s rule-based approach, resulting in a hybrid system that improves both detection efficiency and scalability.</li>
+                    <li><strong> </strong> The goal is to leverage LSTM’s learning capabilities to complement Suricata’s
+                        rule-based approach, resulting in a hybrid system that improves both detection efficiency and
+                        scalability.</li>
 
                 </ul>
             </div>
-        
+
             <!-- Second container -->
             <!-- <div class="feature-container">
                 <ul>
@@ -74,7 +83,7 @@
 
 
             <h2>Key Features</h2>
-        
+
             <!-- First container -->
             <div class="feature-container">
                 <ul>
@@ -85,7 +94,7 @@
                     <li><strong>Visualizations:</strong> Graphs showing improved detection rates.</li>
                 </ul>
             </div>
-        
+
             <!-- Second container -->
             <!-- <div class="feature-container">
                 <ul>
@@ -97,17 +106,44 @@
                 </ul>
             </div> -->
 
-        
-        </section>
-        
-         <br> <br> <br> <br>
 
-        <!-- Demo Section -->
+        </section>
+
+        <br> <br> <br> <br>
+
+
+        <!-- Demo Section with Prediction Form -->
         <section id="demo">
             <h2>Live Demo</h2>
-            <p>See our ML-enhanced Suricata detecting suspicious activities in real-time.</p>
-            <video src="demo.mp4" controls class="demo-video"></video>
+            <p>See our ML-enhanced Suricata detecting suspicious activities in real-time.</p> <br>
+
+            <video src="demo.mp4" controls class="demo-video"></video> <br><br><br>
+
+            <form class="network-data-form">
+                <!-- Label for entering network data -->
+                <label for="network-input">Enter Network Data:</label> <br>
+                <textarea id="network-input" name="networkData" placeholder="Enter your network data here"></textarea>
+            
+                <!-- OR section -->
+                <p style="text-align: center; font-weight: bold;">OR</p>
+            
+                <!-- File upload section -->
+                <label for="file-upload">Upload a file:</label>
+                <input type="file" id="file-upload" name="fileUpload" accept=".txt, .csv" class="file-upload">
+            
+                <!-- Submit button -->
+                <button type="submit">Submit</button>
+            </form>
+                       
+
+            <div id="prediction-result" class="prediction-box">
+                <!-- Prediction result will be displayed here -->
+            </div>
+            
+
+            
         </section>
+
 
         <br> <br> <br> <br>
 
@@ -125,7 +161,7 @@
 
         <!-- Team Section -->
         <section id="team">
-            <h2>Meet the Team</h2>         <br> <br> 
+            <h2>Meet the Team</h2> <br> <br>
 
             <div class="team-members">
                 <div class="team-member">
@@ -159,11 +195,11 @@
             <p>Check out the <a href="https://github.com/yourrepo" target="_blank">GitHub Repository</a> for the full
                 project documentation and code samples.</p>
         </section>
-         <br> <br> <br><br> <br> <br><br> <br> <br>
+        <br> <br> <br><br> <br> <br><br> <br> <br>
 
         <!-- Contact Section -->
         <section id="contact">
-            <h2>Contact Us / Feedback</h2>  <br>
+            <h2>Contact Us / Feedback</h2> <br>
             <form action="submit_contact.php" method="post" class="contact-form">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
@@ -176,13 +212,10 @@
 
                 <button type="submit">Send</button>
             </form>
-        </section>    <br><br> <br> <br>  <br>
+        </section> <br><br> <br> <br> <br>
 
     </main>
 
 </body>
 
 </html>
-
-
-
