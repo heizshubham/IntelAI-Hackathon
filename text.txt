@@ -1,0 +1,9 @@
+Enhancing IDS/IPS using LSTM with Suricata:
+
+
+Intrusion Detection Systems (IDS) and Intrusion Prevention Systems (IPS) are essential for identifying and preventing unauthorized access to network systems.
+Suricata is a high-performance, open-source IDS/IPS engine that detects network anomalies using predefined rules.
+Traditional rule-based systems like Suricata are prone to high false positives and may struggle with evolving cyber threats and zero-day attacks.
+Long Short-Term Memory (LSTM) networks, a type of Recurrent Neural Network (RNN), excel at recognizing patterns in sequential data, making them suitable for detecting complex, time-dependent network threats.
+This project proposes integrating LSTM with Suricata to enhance the accuracy of intrusion detection, reduce false positives, and detect sophisticated or evolving attacks in real-time.
+The goal is to leverage LSTM’s learning capabilities to complement Suricata’s rule-based approach, resulting in a hybrid system that improves both detection efficiency and scalability.
