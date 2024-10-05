@@ -4,7 +4,6 @@
 
 ![Firewall Image](https://drive.google.com/uc?export=view&id=13WhUVJwUHYGFGP_ZLC9rCISNWK7lXqYq)
 
-![Firewall Image]([https://example.com/firewall-image.png](https://drive.google.com/file/d/13WhUVJwUHYGFGP_ZLC9rCISNWK7lXqYq/view?usp=sharing))
 
 ## 📜 **Introduction**
 
@@ -168,6 +167,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ~ Special mention to the Suricata community for their groundbreaking work on IDS/IPS technologies.
 
 
+![Firewall Image](https://drive.google.com/uc?export=view&id=167WqlRgJHp9NslEXz4UfRgkGKKHbm1Bz)
 
 
 
