@@ -69,3 +69,105 @@ graph LR;
 -> Precision: 97.8%
 -> Recall: 96.3%
 -> F1-Score: 97.0%
+
+**⚙️ How to Run the Project**
+#Prerequisites
+Ensure you have the following installed:
+
+-> Python 3.8+
+-> Suricata 6.0+
+-> Libraries: scikit-learn, pandas, joblib, matplotlib
+
+
+**🔧 Installation**
+
+1. Clone the repository:
+
+~ git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+
+2. Install required Python packages:
+
+~ pip install -r requirements.txt
+
+**🚀 Running Suricata IDS/IPS**
+1. Install and configure Suricata:
+  ~ Follow the Suricata Installation Guide.
+  ~ Configure suricata.yaml for JSON output logging.
+
+2. Start Suricata on your network interface:
+  ~ sudo suricata -c /etc/suricata/suricata.yaml -i eth0
+
+
+**🧑‍💻 Running the Machine Learning Pipeline**
+1. Train the Model:
+  ~ python src/train_model.py
+2. Run Predictions on new data:
+  ~ python src/predict.py --input ../data/sample_network_data.csv
+3. Launch Dashboard:
+  ~ python src/dashboard.py
+
+
+**🎯 Results**
+Our AI-enhanced firewall achieved remarkable accuracy in detecting and blocking threats:
+
+Metric	    Score
+Accuracy	98.5%
+Precision	97.8%
+Recall	    96.3%
+F1-Score	97.0%
+
+
+**🗂️ Project Directory Structure**
+ML-Enhanced-Suricata-IDS/
+├── data/                   # Datasets
+├── src/                    # Source code
+│   ├── model.py            # ML model code
+│   ├── train_model.py      # Model training script
+│   ├── predict.py          # Inference script
+│   ├── dashboard.py        # Dashboard server
+├── models/                 # Saved models
+├── docs/                   # Documentation
+├── README.md               # Readme file
+├── requirements.txt        # Required packages
+└── LICENSE                 # License for the project
+
+
+**🌟 Future Enhancements**
+-> Global Threat Intelligence Integration: Connect with real-time threat feeds.
+-> Anomaly Detection: Implement unsupervised learning models.
+-> Multi-Factor Authentication: Enhance system security.
+-> Model Optimization: Fine-tune models using hyperparameter optimization.
+
+
+
+
+**🧑‍💻 Team Members**
+~ Mohamad Ibrahim - ML Developer
+
+Sarvesh - Suricata Configuration Expert
+
+Priyadharshan - Firewall & Security Analyst
+
+Shubham Pandey - web Developer & Visualization Developer
+
+
+**📜 License**
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+
+
+
+
+**🙌 Acknowledgments**
+
+~ Huge thanks to the IntelAI Hackathon 2024 organizers and KPR College Coimbatore for hosting the event.
+
+~ Special mention to the Suricata community for their groundbreaking work on IDS/IPS technologies.
+
+
+
+
+
+
+
