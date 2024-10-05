@@ -2,7 +2,7 @@
 
 #### 🔐 **Next-Generation Firewall with AI-Powered Threat Detection** 🔐
 
-![Firewall Image](https://example.com/firewall-image.png)
+![Firewall Image]([https://example.com/firewall-image.png](https://drive.google.com/file/d/13WhUVJwUHYGFGP_ZLC9rCISNWK7lXqYq/view?usp=sharing))
 
 ## 📜 **Introduction**
 
